@@ -1,8 +1,11 @@
 body {
+    display: flex;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -17,15 +20,13 @@ body {
   #root, #__next {
     isolation: isolate;
   }
-body{
-    display: flex;
-}
+
 
 .right-side{
     display: flex;
     flex-direction: column;
     flex: 0 1 auto;
-    height: 100vh;
+    height: 100vmax;
     width: 30vw;
     background-image: url('./photo.avif') ;
     background-size: cover ;
@@ -33,14 +34,21 @@ body{
     justify-content: space-between;
 }
 footer{
+
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+    
 }
+.underline{
+
+    border-bottom: 0.01px solid white;
+}
+
 .logo{
     font: 5rem "myFont";
     display: flex;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     margin-top: 15vh;
@@ -54,4 +62,48 @@ footer{
     
     width: 15%;
     margin: 10px;
+}
+.left-side{
+    width: 100%;
+}
+.left-side article{
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+article::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 35%;
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.719);
+    margin-bottom: 10vh;
+}
+.form > div{
+    
+    width: 40%;
+    height: 5.7%;
+    
+}
+.form > div > input{
+    display: block;
+    border: rgba(0, 0, 0, 0.719) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+input:focus{
+
+    outline: rgba(0, 25, 253, 0.719) solid 1px;
+
+}
+.form  p{
+    padding-left: 5.1vw;
+    text-align: left;
+    width: 100%;
 }
