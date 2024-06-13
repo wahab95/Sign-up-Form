@@ -31,5 +31,23 @@ body{
 footer{
     display: flex;
     justify-content: center;
-    margin-top: 92vh;
+    margin-top: 55vh;
+}
+.logo{
+    font: 5rem "myFont";
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.521);
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    
+}
+@font-face {
+    font-family: "myFont";
+    src: url("./Norse-Bold.otf") format("opentype");
+  }
+.logo img{
+    
+    width: 15%;
+    margin: 10px;
 }
