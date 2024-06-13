@@ -22,16 +22,20 @@ body{
 }
 
 .right-side{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
     height: 100vh;
     width: 30vw;
-    background: url('./photo.avif') ;
+    background-image: url('./photo.avif') ;
     background-size: cover ;
     color: white;
+    justify-content: space-between;
 }
 footer{
     display: flex;
     justify-content: center;
-    margin-top: 55vh;
+    align-items: center;
 }
 .logo{
     font: 5rem "myFont";
