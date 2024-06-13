@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up Form</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="right-side">
@@ -19,31 +20,33 @@
             <br>
         </article>
         <form action='', method="post">
-            <p>Let's do this!</p>
-            <label for='frist-name'>FIRST NAME</label>
-            <input id="frist-name" autocomplete="given-name" type="text">
+            <div class="form">
+                <p>Let's do this!</p>
+                <label for='frist-name'>FIRST NAME</label>
+                <input id="frist-name" autocomplete="given-name" type="text">
 
-            <label for='last-name'>LAST NAME</label>
-            <input id="last-name" autocomplete="family-name">
-            
-            <label for='email'>EMAIL</label>
-            <input id="email" autocomplete="email" type="email">
+                <label for='last-name'>LAST NAME</label>
+                <input id="last-name" autocomplete="family-name">
+                
+                <label for='email'>EMAIL</label>
+                <input id="email" autocomplete="email" type="email">
 
-            <label for='phone-number'>PHONE NUMBER</label>
-            <input id="phone-number" autocomplete="tel">
+                <label for='phone-number'>PHONE NUMBER</label>
+                <input id="phone-number" autocomplete="tel">
 
-            <label for='password'>PASSWORD</label>
-            <input id="password" type="password">
+                <label for='password'>PASSWORD</label>
+                <input id="password" type="password">
 
-            <label for='confirm-password'>CONFIRM PASSWORD</label>
-            <input id="confirm-password" type="password">
-       <br>
-            <button type="submit">Sign up</button>
-
-        </form>
+                <label for='confirm-password'>CONFIRM PASSWORD</label>
+                <input id="confirm-password" type="password">
+            </div>
+            <div class="not-form">
+                 <button type="submit">Sign up</button>
+                 <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
         
-
-        <p>Already have an account? <a href="#">Sign in</a></p>
+        
+        </form>
     </div>
 </body>
 </html>
