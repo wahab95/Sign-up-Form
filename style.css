@@ -65,6 +65,7 @@ footer{
 }
 .left-side{
     width: 100%;
+    background-color: #E5E7EB;
 }
 .left-side article{
     margin-top: 10vh;
@@ -82,7 +83,8 @@ article::first-letter{
     justify-content: space-evenly;
     width: 100%;
     height: 35%;
-    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.719);
+    background-color: #ececec;
+    box-shadow: 0px 10px 10px 0px rgba(94, 91, 91, 0.377);
     margin-bottom: 10vh;
 }
 .form > div{
@@ -95,8 +97,12 @@ article::first-letter{
     display: block;
     border: rgba(0, 0, 0, 0.719) solid 1px;
     border-radius: 5px;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
+input:invalid{
+    background-color: rgba(248, 146, 146, 0.74);
+}
+
 input:focus{
 
     outline: rgba(0, 25, 253, 0.719) solid 1px;
@@ -106,4 +112,18 @@ input:focus{
     padding-left: 5.1vw;
     text-align: left;
     width: 100%;
+}
+.not-form{
+    margin-left: 6.5%;
+}
+.not-form button{
+    background-color: #596D48;
+    color: white;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
