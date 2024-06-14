@@ -100,8 +100,8 @@ article::first-letter{
     margin-bottom: 5%;
 }
 input:invalid{
-    //background-color: rgba(248, 146, 146, 0.74);
-    outline: 1px solid red;
+    
+    outline: 1px solid rgba(248, 146, 146);
 }
 
 input:focus{
